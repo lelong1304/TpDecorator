@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=capacite\ comparator
+comment0.target=FileAvecPriorite(int,\ java.util.Comparator)
+comment1.params=e
+comment1.target=void\ enfiler(java.lang.Comparable)
+comment2.params=
+comment2.target=boolean\ repOk()
+comment3.params=iterable
+comment3.target=boolean\ isSorted(java.lang.Iterable)
+numComments=4
