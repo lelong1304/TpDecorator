@@ -3,12 +3,14 @@ package question2;
 
 public class ChocolateTest extends junit.framework.TestCase{
 	public Chocolate choco;
+	public Decaf decaf;
 
  //� d�commenter
 
 
  	public void setUp(){
  		choco = new Chocolate() {};
+ 		decaf = new Decaf() {};
  	}
  
  	
@@ -38,7 +40,11 @@ public class ChocolateTest extends junit.framework.TestCase{
  		assertEquals(2.55, chocoWhipSoyMocha.cost(), 0.01);
  	}
 	
-
+ 	public void testDecafMilk() {
+ 		question2.Beverage decafMilk = new question2.Milk(decaf);
+ 		 
+ 		assertEquals(1.15, decafMilk.cost(), 0.01);
+ 	}
 	
 	
 

@@ -71,7 +71,7 @@ public class PizzaStore extends JApplet{
   		boutonSolo.addActionListener(
   		  new ActionListener(){
   		    public void actionPerformed(ActionEvent ae){
-  		      // � compl�ter
+  		      // à compléter
   		    	pizza = new PizzaSolo();
   		      validerLesDecorations();
   		    }
@@ -80,7 +80,7 @@ public class PizzaStore extends JApplet{
       boutonClassic.addActionListener(
       	new ActionListener(){
   		    public void actionPerformed(ActionEvent ae){
-  		      // � compl�ter
+  		      // à compléter
   		    	pizza = new Classic();
   		      validerLesDecorations();
   		    }
@@ -89,7 +89,8 @@ public class PizzaStore extends JApplet{
       boutonCrust.addActionListener(		  
         new ActionListener(){
   		    public void actionPerformed(ActionEvent ae){
-  		      // � compl�ter
+  		      // à compléter
+  		    	pizza = new GenerousCrust();
   		      validerLesDecorations();
   		    }
   		  });
@@ -98,46 +99,51 @@ public class PizzaStore extends JApplet{
       parmesan.addItemListener(new ItemListener(){
         public void itemStateChanged(ItemEvent ie){
           if(ie.getStateChange()==ItemEvent.SELECTED){
-            // � compl�ter
+            // à compléter
         	  pizza = new Parmesan(pizza);
           }
           afficherLaPizzaEtSonCost();
       }}); 
+      
       mozarella.addItemListener(new ItemListener(){
         public void itemStateChanged(ItemEvent ie){
           if(ie.getStateChange()==ItemEvent.SELECTED){
-            // � compl�ter
-        	  
+            // à compléter
+        	  pizza = new FreshMozarella(pizza);
         	 
           }
           afficherLaPizzaEtSonCost();
       }});
+      
       ham.addItemListener(new ItemListener(){
         public void itemStateChanged(ItemEvent ie){
           if(ie.getStateChange()==ItemEvent.SELECTED){
-            // � compl�ter
+            // à compléter
         	  pizza = new Ham(pizza);
           }
           afficherLaPizzaEtSonCost();
       }}); 
+      
       tomato.addItemListener(new ItemListener(){
         public void itemStateChanged(ItemEvent ie){
-          // � compl�ter
+          // à compléter
         	pizza = new Tomato(pizza);
           afficherLaPizzaEtSonCost();
       }});
+      
       mushrooms.addItemListener(new ItemListener(){
         public void itemStateChanged(ItemEvent ie){
           if(ie.getStateChange()==ItemEvent.SELECTED){
-            // � compl�ter
+            // à compléter
         	  pizza = new Mushrooms(pizza);
           }
           afficherLaPizzaEtSonCost();
       }}); 
+      
       clams.addItemListener(new ItemListener(){
         public void itemStateChanged(ItemEvent ie){
           if(ie.getStateChange()==ItemEvent.SELECTED){
-            // � compl�ter
+            // à compléter
         	  pizza = new Clams(pizza);
           }
           else clams.setState(true);
