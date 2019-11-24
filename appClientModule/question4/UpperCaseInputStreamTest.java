@@ -2,6 +2,10 @@ package question4;
 
 import java.io.*;
 import java.net.*;
+/*
+* @author LE Long 
+* @version 26/11/2019
+*/
 
 public class UpperCaseInputStreamTest extends junit.framework.TestCase{
 	private String nameFile = "README.TXT";

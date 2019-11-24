@@ -7,8 +7,8 @@ import java.io.FilterInputStream;
 /**
  * Cette classe "d�core" un fichier (InputSream) par la conversion de tous
  * les caract�res Minuscule en Majuscule
- * @author (votre nom) 
- * @version (un num�ro de version ou une date)
+ * @author LE Long 
+ * @version 25/11/2019
  */
 public class UpperCaseInputStream extends FilterInputStream  {
 
