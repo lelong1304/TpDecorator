@@ -5,60 +5,61 @@ import question3.fifo.*;
 
 
 public class QueueImpl implements QueueI {
-  // à compléter
+  // ï¿½ complï¿½ter
   private int capacity;
   
   public QueueImpl(int capacity){
-    // à compléter
+    // ï¿½ complï¿½ter
+	  this.capacity = capacity;
   }
   public void add(int i){
-    // à compléter
+    // ï¿½ complï¿½ter
   }
   public int capacity(){
     return capacity;
   }
   public int remove(){
-  // à compléter
-    return 0;     // à compléter
+  // ï¿½ complï¿½ter
+    return 0;     // ï¿½ complï¿½ter
   }
   public int element(){
-    // à compléter
+    // ï¿½ complï¿½ter
     return 0;
   }
   public void clear(){
-     // à compléter
+     // ï¿½ complï¿½ter
   }
   public int size(){
-    return 0;  // à compléter
+    return 0;  // ï¿½ complï¿½ter
   }
   public boolean contains(int i){
-    return false;  // à compléter
+    return false;  // ï¿½ complï¿½ter
   }
   public Iterator<Integer> iterator(){
-    return null;  // à compléter
+    return null;  // ï¿½ complï¿½ter
   }
   public String toString(){
-    return "à compléter";
+    return "ï¿½ complï¿½ter";
   }
   public boolean equals(Object o){
     if(!(o instanceof QueueI)) return false;
     QueueImpl q = (QueueImpl)o;
     if(this.capacity()!=q.capacity())return false;
     if(this.size()!=q.size())return false;
-    return false;  // à compléter 
+    return false;  // ï¿½ complï¿½ter 
   }
   public int hashCode(){
-    return 0;  // à compléter
+    return 0;  // ï¿½ complï¿½ter
   }
 
   public FileI<Integer> af(){
     FileI<Integer> fifo = Fabrique.creerFile(capacity);
-    //  // à compléter
+    //  // ï¿½ complï¿½ter
     return fifo;
   }
  
   public boolean repOk(){
-      return  /* à compléter && */ capacity()>0 && size()<=capacity();
+      return  /* ï¿½ complï¿½ter && */ capacity()>0 && size()<=capacity();
   }
   
 

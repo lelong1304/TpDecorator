@@ -5,19 +5,35 @@ import java.io.IOException;
 import java.io.FilterInputStream;
 
 /**
- * Cette classe "décore" un fichier (InputSream) par la conversion de tous
- * les caractères Minuscule en Majuscule
+ * Cette classe "dï¿½core" un fichier (InputSream) par la conversion de tous
+ * les caractï¿½res Minuscule en Majuscule
  * @author (votre nom) 
- * @version (un numéro de version ou une date)
+ * @version (un numï¿½ro de version ou une date)
  */
-public class UpperCaseInputStream  { // à compléter
+public class UpperCaseInputStream extends FilterInputStream  {
 
-// à compléter
-// à compléter
-// à compléter
-// à compléter
-// à compléter
-// à compléter
-// à compléter
+	protected UpperCaseInputStream(InputStream in) {
+		super(in);
+		// TODO Auto-generated constructor stub
+	} 
+	public int read() throws IOException{
+        int c = super.read();
+        if(c != -1){
+            return Character.toUpperCase((char) c);
+        } else {
+            return c;
+        }
+    }
+	
+//	public int read(byte[] b, int off, int len) throws IOException{
+//        int c = super.read(b, off,len);
+//        for(int i = off; i<off+c; i++){
+//            b[i] = (byte)Character.toUpperCase((char)b[i]);
+//
+//        }
+//        return c;
+//    }
+
+
 
 }
