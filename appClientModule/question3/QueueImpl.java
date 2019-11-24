@@ -24,9 +24,9 @@ public class QueueImpl implements QueueI {
     return capacity;
   }
   public int remove(){
-	  this.file.defiler();
+	  return this.file.defiler();
   // � compl�ter
-    return 0;     // � compl�ter
+         // � compl�ter
   }
   public int element(){
     // � compl�ter
@@ -67,14 +67,14 @@ public void setFile(FileImpl<Integer> file) {
 	this.file = file;
 }
 public int hashCode(){
-    return 0;  // � compl�ter
+    return this.file.hashCode();  // � compl�ter
   }
 
   public FileI<Integer> af(){
-    //FileI<Integer> fifo = Fabrique.creerFile(capacity);
-	  
+    FileI<Integer> fifo = Fabrique.creerFile(capacity);
+	this.file.forEach(x-> fifo.enfiler(x));
     
-    return this.file;
+    return fifo;
   }
  
   public boolean repOk(){

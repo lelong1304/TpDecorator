@@ -16,7 +16,7 @@ public class TestQueueAF extends junit.framework.TestCase{
 
   public void testAdd(){
 	  //changed declaration of queue
-    FileI<Integer> queue = Fabrique.creerFile(q.capacity());
+    FileI<Integer> queue = q.af();
 		q.add(3); queue.enfiler(3);
 		assertEquals(q.af(),queue);
  		q.add(2); queue.enfiler(2);
@@ -45,11 +45,10 @@ public class TestQueueAF extends junit.framework.TestCase{
 		assertTrue(q.contains(3)); 
 		assertTrue(q.af().contient(3));
     FileI<Integer> queue = q.af();
-		int res  = q.remove();
-// pas compris. quand on retraite un élément comme le premier élément, la file est vide		
-//		int res2 = queue.defiler();
-//		
-//		assertEquals(res, res2);
+		int res  = q.remove();	
+		int res2 = queue.defiler();
+		
+		assertEquals(res, res2);
 		assertFalse(q.contains(3)); 
 		assertFalse(q.af().contient(3));
 		
