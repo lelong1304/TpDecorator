@@ -40,10 +40,10 @@ public class UpperCaseInputStreamTest extends junit.framework.TestCase{
 
 	        int c = is.read(b, off, len);
 	         for(int i = off; i<off+c; i++){
-	            b[i] = (byte)Character.toUpperCase((char)b[i]);
-	            assertTrue("erreur !, '" + (byte)Character.toUpperCase((char)b[i])
-				+"' ne semble pas être une majuscule ...",Character.isUpperCase((char)c) || (char)c==' ');
-	            c = is.read(b, off, len);
+	            //b[i] = (byte)Character.toUpperCase((char)b[i]);
+	            assertTrue("erreur !, '" + /*(byte)Character.toUpperCase((char)b[i])*/Character.valueOf((char)b[i])
+				+"' ne semble pas être une majuscule ...",Character.isUpperCase((char)b[i]) || (char)b[i]==' ');
+	            //c = is.read(b, i, len);
 	        }
 	        
 
